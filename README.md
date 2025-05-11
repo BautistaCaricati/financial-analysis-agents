@@ -25,7 +25,7 @@ This project showcases a multi-agent collaboration system for financial market a
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/your_username/financial-analysis-agents.git
+git clone https://github.com/BautistaCaricati/financial-analysis-agents.git
 cd financial-analysis-agents
 
 pip install -r requirements.txt
