@@ -10,6 +10,7 @@ from agents.agents import (
 
 # Market Data Analysis
 data_analysis_task = Task(
+    name="Market Data Analysis",
     description=(
         "Continuously monitor and analyze market data for the selected stock ({stock_selection}). "
         "Use statistical modeling and machine learning to identify trends and predict market movements."
@@ -17,11 +18,12 @@ data_analysis_task = Task(
     expected_output=(
         "Insights and alerts about significant market opportunities or threats for {stock_selection}."
     ),
-    agent=data_analyst_agent
+    agent=data_analyst_agent,
 )
 
 # Strategy Development
 strategy_development_task = Task(
+    name="Strategy Development",
     description=(
         "Develop and refine trading strategies based on the insights from the Data Analyst and "
         "user-defined risk tolerance ({risk_tolerance}). "
@@ -31,11 +33,12 @@ strategy_development_task = Task(
         "A set of potential trading strategies for {stock_selection} "
         "that align with the user's risk tolerance."
     ),
-    agent=trading_strategy_agent
+    agent=trading_strategy_agent,
 )
 
 # Execution Plan
 execution_planning_task = Task(
+    name="Execution Planning",
     description=(
         "Analyze approved trading strategies to determine the best execution methods for {stock_selection}, "
         "considering current market conditions and optimal pricing."
@@ -43,11 +46,12 @@ execution_planning_task = Task(
     expected_output=(
         "Detailed execution plans suggesting how and when to execute trades for {stock_selection}."
     ),
-    agent=execution_agent
+    agent=execution_agent,
 )
 
 # Risk Analysis
 risk_assessment_task = Task(
+    name="Risk Assessment",
     description=(
         "Evaluate the risks associated with the proposed trading strategies and execution plans for {stock_selection}. "
         "Provide a detailed analysis of potential risks and suggest mitigation strategies."
@@ -56,5 +60,5 @@ risk_assessment_task = Task(
         "A comprehensive risk analysis report detailing potential risks and mitigation recommendations "
         "for {stock_selection}."
     ),
-    agent=risk_management_agent
+    agent=risk_management_agent,
 )
